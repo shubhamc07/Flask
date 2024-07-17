@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form action="{{url_for('calculate')}}" method="post">
+        <input type="number" name="num1" placeholder="Enter number 1" required value="{{num1}}"><br><br>
+        <input type="number" name="num2" placeholder="Enter number 2" required value="{{num2}}"><br><br>
+        <button type="submit" name="operation" value="add">Add</button>
+        <button type="submit" name="operation" value="sub">Subtract</button>
+        <button type="submit" name="operation" value="mul">Multiply</button>
+        <button type="submit" name="operation" value="div">Divide</button>
+    </form>
+
+    <h4>Result:{{result}}</h4>
+</body>
+</html>
